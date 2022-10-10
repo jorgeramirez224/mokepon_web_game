@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>MOKEPON</title>
+		<link rel="stylesheet" type="text/css" href="./styles.css">
+	</head>
+	<body>
+		<section id="select-character">
+			<h1 class="title">MOKEPON!</h1>
+			<h2 class="title-2">Select your character:</h2>
+
+			<div id="container-cards" class="cards">
+				<!--
+				<input class="radio-character" type="radio" name="character" id="hipodoge" />
+				<label class="mokepon-card" for="hipodoge">
+					<p>Hipodoge</p>
+					<img src="./assets/hipodoge.png" alt="Hipodoge">
+					</label>-
+			
+				<input class="radio-character" type="radio" name="character" id="capipepo" />
+				<label class="mokepon-card" for="capipepo">
+					<p>Capipepo</p>
+					<img src="./assets/capipepo.png" alt="Capipepo">
+					</label>
+
+				<input class="radio-character" type="radio" name="character" id="ratigueya" />
+				<label class="mokepon-card" for="ratigueya">
+					<p>Ratigueya</p>
+					<img src="./assets/ratigueya.png" alt="Ratigueya">
+					</label>
+				-->
+			</div>
+		
+			<button id="character-button">Select:</button>	
+		</section>
+
+		<section id="select-attack">
+			<h1 class="title">MOKEPON!</h1>
+			
+			<h2 class="title-2">Select your attack:</h2>
+
+			<div class="card-buttons">
+				<button id="fire-button" class="attack-button">Fire 🔥</button>
+				<button id="water-button" class="attack-button">Water 💦</button>
+				<button id="land-button" class="attack-button">Land 🌱</button>
+			</div>
+
+			<div id="game-message">
+				<p id="result">Good Luck! 💞</p>
+				<section id="reset-game">
+					<button id="reset-button">Reset Game</button>
+				</section>
+			</div>
+
+			<div class="attacks-lifes-info">
+				<div class="character-info">
+					<p id="lifes-player">3</p>
+					<p id="character-player"></p>
+					<div id="character-attack-section"></div>	
+				</div>
+				<div class="enemy-info">
+					<p id="lifes-enemy">3</p>
+					<p id="character-enemy"></p>
+					<div id="enemy-attack-section"></div>	
+				</div>
+			</div>		
+		</section>
+		<script src="./js/mokepon.js"></script>
+	</body>
+</html>

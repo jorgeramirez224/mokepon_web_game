@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&display=swap');
+
+* {
+	padding: 0;
+	margin: 7px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFF702;
+	font-family: 'Press Start 2P', cursive;	
+}
+
+#select-character {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	/*margin-top: 60px;*/
+	color: #000000;
+	/*height: 70px;*/
+	font-size: 40px;
+}
+
+.title-2 {
+	color: black;
+	text-align: center;
+	font-size: 20px;
+}
+
+.cards, .card-buttons {
+	display: flex;
+	gap: 3px;
+}
+
+.mokepon-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #03D3E8;
+	width: 293px;
+	height: 175px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 50px;
+	border: 5px solid;
+	font-size: 15px;
+}
+
+.mokepon-card img {
+	width: 130px;
+}
+
+.mokepon-card:hover {
+	background: #41E404;
+	color: #FFFFFF;
+}
+
+.radio-character {
+	display: none;
+}
+
+.radio-character:checked + label {
+	background-color: #031399; 
+	color: #FFFFFF;
+}
+
+#character-button {
+	background-color: #DEDEDE;
+	width: 200px;
+	height: 50px;
+	border-radius: 50px;
+	border: 5px solid;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;	
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#character-button:hover {
+	background: #41E404;
+	color: #FFFFFF;
+}
+
+#character-button:active {
+	background: #6EE0F7;
+}
+
+#watch-map {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#watch-map button {
+	background-color: #DEDEDE;
+	width: 80px;
+	height: 30px;
+	border-radius: 50px;
+	border: 3px solid;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;	
+	font-weight: bold;
+	font-size: 10px;
+	margin: 5px 0; 
+}
+
+/*#map {
+	border: 2px solid black;
+} */
+
+#select-attack {
+	flex-direction: column;
+	align-items: center;
+}
+
+.attack-button {
+	background: #DEDEDE;
+	width: 130px;
+	height: 45px;
+	border-radius: 50px;
+	border: 3px solid;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;	
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.attack-button:hover {
+	background: #41E404;
+	color: #FFFFFF;
+}
+
+.attack-button:active {
+	background: #6EE0F7;
+}
+
+#game-message {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	background: white;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+
+#reset-button {
+	background: #DEDEDE;
+	width: 110px;
+	height: 40px;
+	border-radius: 50px;
+	border: 3px solid;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#reset-button:hover {
+	background: #06B7DB;
+	color: #FFFFFF;
+}
+
+#reset-button:active {
+	background: #6EE0F7;
+}
+
+.attacks-lifes-info {
+	display: grid;
+	grid-template-columns: 150px 150px;
+	text-align: center;
+}
+
+.character-info, .enemy-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (max-width: 560px) {
+	.cards {
+		flex-direction: column;
+	}
+
+	.card-buttons {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 330px) {
+	#watch-map div {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+}
