@@ -359,7 +359,7 @@ function winnerAndLoser() {
 			versusIterationPoints(i, i)
 			createMessage("TIE!")
 		}
-		else if((attackPlayer[i] === 'FIRE' && enemyAttack[i] === 'LAND') || (attackPlayer[i] === 'WATER' && enemyAttack[i] === 'FIRE') || (attackPlayer[i] === 'LAND' && enemyAttack[i] === 'WATER')) {
+		else if((attackPlayer[i] === 'FIRE' && enemyAttack[i] === 'LAND') || (attackPlayer[i] === 'WATER' && enemyAttack[i] === 'FIRE') || (attackPlayer[i] === 'LAND' 	&& enemyAttack[i] === 'WATER')) {
 			versusIterationPoints(i, i)
 			createMessage("YOU WIN!")
 			victoriesPlayer++
@@ -492,13 +492,13 @@ function sendPosition(x, y) {
 							let mokeponEnemy = null
 							const mokeponName = enemy.mokepon.name || ""
 							if (mokeponName === "Hipodoge") {
-								mokeponEnemy = new Mokepon('Hipodoge', './assets/hipodoge.png', 5, './assets/hipodoge_head.png', enemy.id)
+								mokeponEnemy = new Mokepon('Hipodoge', './assets/hipodoge.png', 5, './assets/hipodoge_head.png', 								enemy.id)
 							}
 							else if (mokeponName === "Capipepo") {
-								mokeponEnemy = new Mokepon('Capipepo', './assets/capipepo.png', 5, './assets/capipepo_head.png', enemy.id)
+								mokeponEnemy = new Mokepon('Capipepo', './assets/capipepo.png', 5, './assets/capipepo_head.png', 								enemy.id)
 							}
 							else if (mokeponName === "Ratigueya") {
-								mokeponEnemy = new Mokepon('Ratigueya', './assets/ratigueya.png', 5, './assets/ratigueya_head.png', enemy.id)
+								mokeponEnemy = new Mokepon('Ratigueya', './assets/ratigueya.png', 5, './assets/ratigueya_head.png', 								   enemy.id)
 							}
 							mokeponEnemy.x = enemy.x
 							mokeponEnemy.y = enemy.y
